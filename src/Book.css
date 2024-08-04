@@ -1,0 +1,48 @@
+/* Book.css */
+.book {
+    /* transform: rotateY(-30deg);s */
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .cover, .page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f0f0f0;
+    color: black;
+    border: 1px solid #ccc;
+    transition: transform 1s;
+  }
+  
+  .cover {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: cadetblue;
+    color: black;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: left;
+  }
+  
+  .page {
+    background: white;
+    transform-origin: left;
+  }
+  
+  .book:hover .cover {
+    transform: rotateY(-160deg);
+  }
+  
+  .page-content {
+    padding: 20px;
+  }
+  
